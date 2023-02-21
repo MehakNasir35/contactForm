@@ -112,7 +112,7 @@ function setCardDetails(details) {
 
 isValidName = (name) => {
     //only alphabets
-    reg = /^[a-zA-Z]*$/
+    reg = /^[a-zA-Z\s]*$/
     if (reg.test(name))
         return true
 
