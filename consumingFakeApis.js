@@ -14,8 +14,8 @@ function fetchUsers() {
 
 function setCardDetails(users) {
     //we have array of users
-    users.forEach(user => {
-        addCard(user)
+    users.forEach(bla => {
+        addCard(bla)
     });
 }
 
