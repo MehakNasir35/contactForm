@@ -132,7 +132,7 @@ isValidEmail = (email) => {
 
 isValidNumber = (number) => {
 
-    reg = /^[0-9\-]+$/
+    reg = /^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$/
     if (reg.test(number))
         return true
 
