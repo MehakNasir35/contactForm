@@ -50,8 +50,8 @@
       <!-- error message display -->
       <div class="alert alert-danger" id="error" style="display: none;" role="alert">
       </div>
-       <!-- success message display -->
-       <div class="alert alert-success" id="success" style="display: none;" role="alert">
+      <!-- success message display -->
+      <div class="alert alert-success" id="success" style="display: none;" role="alert">
       </div>
       <!-- input fields start -->
       <input class="form-control form-control-lg mt-3" id="name" type="text" placeholder="Name" />
@@ -60,18 +60,18 @@
         placeholder="Phone" />
       <!-- input fields end -->
       <!-- heading -->
-      <h5 class="font-weight-bold mt-3">Contact Type</h5>
+      <h5 class="font-weight-bold mt-3">Contact Gender</h5>
       <!-- radio button 1 div start -->
       <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"
+        <input class="form-check-input" type="radio" name="gender" id="male" value="option1"
           checked />
-        <label class="form-check-label" for="inlineRadio1">Personal</label>
+        <label class="form-check-label" for="inlineRadio1">Male</label>
       </div>
       <!-- radio button 1 div end -->
       <!-- radio button 2 div start -->
       <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
-        <label class="form-check-label" for="inlineRadio2">Professional</label>
+        <input class="form-check-input" type="radio" name="gender" id="female" value="option2" />
+        <label class="form-check-label" for="inlineRadio2">Female</label>
       </div>
       <!-- radio button 2 div end -->
       <!-- css display flex with content in center -->
@@ -89,14 +89,19 @@
 
     <aside class="col-12 col-md-6 col-lg-6">
       <input class="form-control form-control-lg mt-3" type="text" placeholder="Filter Contacts..." />
-
-      <div id="main"></div>
+      <div class="alert alert-dark mt-2" id="load" role="alert">
+        Loading...
+      </div>
+      <div id="main">
+       
+      </div>
+     
 
     </aside>
     <!-- second section end  -->
   </div>
   <!-- main div(row) end -->
-  <script src="script.js"></script>
+  <script src="consumingFakeApis.js"></script>
   <!-- bootstrap scripts -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
